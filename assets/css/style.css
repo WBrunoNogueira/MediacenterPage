@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;/*alinha o container no meio da tela*/
+    height: 120px;
+
+}
+.container{
+    width: 990px;
+    
+  
+
+    display: flex;
+    justify-content: space-between; /*espaço entre as divs logo e menus*/
+    
+}
+.logo{
+    display: flex;/*por padrão o flex direction é row*/
+    align-items: center; /*alinha a coluna para centro a logo*/
+   
+}
+.menus{
+  
+  display: flex; /*deixar o menu no meio*/
+  align-items: center;
+
+}
+
+nav ul ,
+ nav li{
+    list-style: none; /*tira pontos da lista */
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    display: block;/*para poder alterar conteudos*/
+
+    padding: 15px;
+    text-decoration: none; /*tira sublinhados dos links*/
+    text-transform: uppercase; /*deixa tudo maiusculo */
+    color: #727272;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*para deixar o efeito de active e hover nos menus*/
+nav .active a,
+nav a:hover {
+    background-color: #39aae1;
+    color: #ffff;
+}
