@@ -1,3 +1,6 @@
+*{
+    font-family: arial;
+}
 body{
     margin: 0;
     padding: 0;
@@ -14,7 +17,7 @@ header{
   
 
     display: flex;
-    justify-content: space-between; /*espaço entre as divs logo e menus*/
+    justify-content: space-between; /*espaço flex entre as divs logo e menus*/
     
 }
 .logo{
@@ -45,7 +48,6 @@ nav a {
     text-decoration: none; /*tira sublinhados dos links*/
     text-transform: uppercase; /*deixa tudo maiusculo */
     color: #727272;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*para deixar o efeito de active e hover nos menus*/
@@ -54,3 +56,93 @@ nav a:hover {
     background-color: #39aae1;
     color: #ffff;
 }
+
+/*para a seção do baner*/
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image:url(../images/img1.jpg); /*imagem*/
+    background-position: center; /*posicionar no centro*/
+    background-size: cover; /*propriedade responsavel por deixar o tamanho da imagem proporcinal ao tamanho da tela indempendente do dispositivo*/
+    height: 670px; /*nada vai aparecer se n colocar uma altura falsa para o elemento */
+}
+.column{ /*essa classe column é aplicada junto com a classe container, e é responasavel por deixar as div do baner uma em baixo da outra*/
+    flex-direction: column;
+}
+.banner_headline{
+    flex: 1; /*banner_headline com tamanho variavel*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffff;
+    text-shadow: 0px 1px 1px #555555;
+ 
+
+   
+}
+.banner_headline h1{
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;/*area fixa para espremer o texto, tamanho maximo de 350*/
+}
+.banner_headline h2{
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    margin-top: 30px;
+}
+.banner_options{
+    
+    display: flex;
+    height: 210px; /*banner options com tamanho fixo*/
+}
+.banner1,
+.banner2,
+.banner3{
+    flex: 1; /*para todos os banes flex em mesmo tamanho de proporção*/
+    color: #ffff;
+    padding: 20px;
+
+}
+
+/*aplicação de cores*/
+.banner1{
+    background-color: #39aae1;
+}
+.banner2{
+    background-color: #0079c7;
+}
+.banner3{
+    background-color: #2b4c99;
+}
+.banner_title{
+    font-size: 21px;
+
+}
+.banner_desc{
+    font-size: 12px;
+    margin-top: 20px;/*margem do na parte de baixo e cima na descrição  do banner*/
+    margin-bottom: 20px
+}
+/*para os botões*/
+.banner_options a{
+    display: inline-block; /*a div acompanha o tamanho do texto, em formato de bloco para f */
+    border: 1px solid #ffff;
+    padding: 5px;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none; /*tira o sublinhado da tag a*/
+}
+.banner_date{
+    display: flex;
+    border-bottom: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    margin:5px;
+    border-bottom: 1px solid #555555;
+    font-size: 14px;
+
+}
+
