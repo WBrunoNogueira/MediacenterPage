@@ -4,6 +4,7 @@
 body{
     margin: 0;
     padding: 0;
+    padding-bottom: 300px;
 }
 header{
     display: flex;
@@ -13,9 +14,6 @@ header{
 }
 .container{
     width: 990px;
-    
-  
-
     display: flex;
     justify-content: space-between; /*espaço flex entre as divs logo e menus*/
     
@@ -146,3 +144,127 @@ nav a:hover {
 
 }
 
+/*parte das noticias*/
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section{
+    flex: 2;
+}
+#geral aside{
+    flex: 1;
+}
+
+
+.widged_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widged_title_text{
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widged_title_bar{/*O QUADRADO AZUL EM BAIXO DO TITULO*/
+    height: 2px;
+    width: 50px;
+    background-color:#36a9e1 ;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+
+/*Latest a News*/
+article a{
+    text-decoration: none;
+}
+article .news_data{
+    display: flex;
+}
+
+article .news_posted_at{
+    background-color: #2B4C99;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .news_comments{
+    background-color: #39aae1;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+}
+article .news_thumbnail{
+    margin-top: 30px;/*espaçamento entre a imagem e a data */
+}
+
+article .news_thumbnail img{ /*faz com que toda a área da imagem seja preemchida isso irá favorecer o fexbox e a quebra de conteudos com o wrap*/
+    width: 100%;
+    height: auto;
+}
+
+article .news_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    color: #000000;
+}
+article .news_resume{
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+
+/*DEPARTAMENTS*/
+aside .widget_body {
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+aside .widget_body .departments{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #0079c7;
+    height: 154px;
+    width: 154px;
+}
+
+/*apointments*/
+aside .appointment_desc{
+    color: #5c5c5c;
+    font-size: 15px;
+
+    border-bottom: 1px  solid  #cccc;
+    padding-bottom:20px ;
+}
+
+
+aside .appointment_info_item{
+    
+   color: #5c5c5c;
+   font-size: 10px;
+   padding-top: 10px;
+   padding-bottom: 15px;
+   border-bottom: 1px  solid  #cccc;
+  
+}
+
+aside .appointment_info_item img{
+width:5%;
+margin-right:5px ;
+}
