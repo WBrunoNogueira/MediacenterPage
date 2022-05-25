@@ -245,26 +245,30 @@ aside .widget_body .departments{
 }
 
 /*apointments*/
-aside .appointment_desc{
-    color: #5c5c5c;
-    font-size: 15px;
+aside .widget_body .appointment_desc{
 
+    color: #5c5c5c;
+    font-size: 20px;
     border-bottom: 1px  solid  #cccc;
     padding-bottom:20px ;
-}
-
-
-aside .appointment_info_item{
     
-   color: #5c5c5c;
-   font-size: 10px;
-   padding-top: 10px;
-   padding-bottom: 15px;
-   border-bottom: 1px  solid  #cccc;
-  
+
 }
 
-aside .appointment_info_item img{
+
+
+aside .widget_body .appointment_info_item{
+   display: flex;
+   align-items: flex-start;
+   font-size: 12px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-bottom: 1px  solid  #cccc;
+
+   
+}
+
+aside .widget_body .appointment_info_item img{
 width:5%;
 margin-right:5px ;
 }
