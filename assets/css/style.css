@@ -259,7 +259,9 @@ aside .widget_body .appointment_desc{
 
 aside .widget_body .appointment_info_item{
    display: flex;
-   align-items: flex-start;
+   align-items: center;
+   justify-content: flex-start;
+   
    font-size: 12px;
    padding-top: 10px;
    padding-bottom: 10px;
