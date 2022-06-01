@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    padding-bottom: 300px;
+
 }
 header{
     display: flex;
@@ -274,3 +274,94 @@ aside .widget_body .appointment_info_item img{
 width:5%;
 margin-right:5px ;
 }
+
+/*footer*/
+footer{
+    background-color: #000000;
+    justify-content: center;
+    display: flex; /*flex center para alinhar com o conteudo da pagina acime e o container*/
+}
+
+/*footer-menu*/
+.footer_menu{
+    color: #fff;
+    display: flex;
+}
+
+.fm-1, .fm-2, .fm-3{
+    flex: 1;
+}
+
+.fm-1{
+    background-color: #39aae1;
+    padding:15px;
+}
+.fm-2{
+    background-color: #0079c7;
+    padding: 15px;
+}
+.fm-3{
+    background-color: #2b4c99;
+    padding: 15px;
+}
+.fm-1-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.fm-1-desc{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/*footer area */
+.footer_area{
+    display: flex;
+    flex-direction: row;
+}
+.footer_area_item{
+    background-color: #000000;
+    color: #fff;
+    flex: 1;
+}
+.flexColum{
+    flex-direction: column;
+}
+
+footer .widged_title_text{
+    color: #fff;
+}
+.footer_copy{
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.footer_medicenter_data{
+    color: #5c5c5c;
+    font-size: 13px;
+}
+.footer_medicenter_desc{
+    margin-bottom:25px;
+}
+.footer_medicenter_andress_title{
+    justify-content: start;
+}
+
+.footer_address{
+    display: flex; /*propriedades flex na pai*/
+    flex-direction: row;
+   
+}
+.footer_item{ /*flex 1 na classe filhas*/
+flex: 1;
+padding: 2px;
+}
+.footer_item strong{
+    color: #fff;
+} 
