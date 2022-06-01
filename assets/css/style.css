@@ -342,6 +342,8 @@ footer .widged_title_text{
     margin-top: 30px;
 }
 
+/*FOOTER MEDICENTER CLINIC*/
+
 .footer_medicenter_data{
     color: #5c5c5c;
     font-size: 13px;
@@ -365,3 +367,44 @@ padding: 2px;
 .footer_item strong{
     color: #fff;
 } 
+
+footer .button-area{
+    display: flex;
+    justify-content: start;
+    margin-top: 25px;
+    
+}
+footer .button-area .button-icon{
+    margin-right: 10px;
+    
+   
+}
+footer .button-icon img{
+    width: 30px;
+    height: 30px;
+}
+
+/*Lastet Posts footer*/
+footer .footer_area_item .post-area{
+    margin-bottom: 25px;
+}
+footer .footer_area_item .lastpost {
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+footer .footer_area_item .lastpost_date{
+    color: #39aae1;
+    font-size: 11px;
+}
+
+/*Lastet TWITTERS*/
+footer .post-area-lasttweets{
+    margin-bottom: 25px;
+}
+footer .post-area-lasttweets .lastpost{
+    color: #5c5c5c;
+    margin-bottom: 5px;
+
+}
