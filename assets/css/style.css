@@ -16,6 +16,7 @@ header{
     width: 990px;
     display: flex;
     justify-content: space-between; /*espaço flex entre as divs logo e menus*/
+    overflow-x: hidden;
     
 }
 .logo{
@@ -406,5 +407,76 @@ footer .post-area-lasttweets{
 footer .post-area-lasttweets .lastpost{
     color: #5c5c5c;
     margin-bottom: 5px;
+
+}
+
+/*responsividade*/  /*nesse caso usa oa inspeciornr do chrome para verificar como fica em celular ou tablet, depois com o media, 
+podemos aplicar mudnças no tamanho da fonte e flex direction column dos elementos*/
+.menuMobile{ /*botão*/
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm_line{ /*linhas do botão*/
+    height: 3px;
+    background-color: #0079c7;
+}
+
+
+@media (max-width:600px) {
+    .banner_headline h1{
+        font-size: 55px;
+    }
+    .banner_headline h2{
+        font-size: 14;
+    }
+    .banner_headline{
+        padding:20px;
+
+    }
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+       
+    }
+    #geral section ,
+     #geral aside{
+        padding: 20px;
+    }
+    .footer_menu,
+    .footer_area{
+        
+        flex-direction: column;
+        padding: 10px;
+    }
+    .footer_copy{
+        padding-left: 20px;
+    }
+    header .container{
+        flex-direction: row; /*aplicar so no conteiner do header o row e mantem as outras como colum*/
+    }
+    /*colocar o butão do nav*/
+    nav ul{
+        flex-direction: column; /*deixa em coluna os botoes*/
+        display: none;/*por padrão escode os uls*/
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+    }
+    header{
+        height: auto; /*tira a altura fixa do hader para descer o site*/
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
 }

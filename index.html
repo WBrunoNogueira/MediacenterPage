@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <meta name="viewport" content="width=device-width,user-scalable=0"/>
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript">
+        window.onload = function () {
+          document.querySelector(".menuMobile").addEventListener("click", function () {
+              if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                document.querySelector(".menu nav ul").style.display = 'none';
+              } else {
+                document.querySelector(".menu nav ul").style.display = 'flex';
+              }
+            })
+        }/*FUNÇÃO PARA AO CLICAR ALTERAR O DISPLAY DE FLEX PARA NONE*/
+      </script>
     <title>Layout-site-mediacenter</title>
 </head>
 <body>
@@ -13,8 +25,13 @@
             <div class="logo">
                 <a href=""><img src="assets/images/logo.png" alt=""></a>
             </div>
-            <div class="menus">
+            <div class="menu">
                 <nav>
+                    <div class="menuMobile"><!--BOTÃO PARA MOBILE-->
+                        <div class="mm_line"></div><!--linhas do botão -->
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="">HOME</a></li>
                         <li><a href="">HOME</a></li>
