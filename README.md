@@ -1,6 +1,4 @@
-# PROJETO  - LAYOUT
-## (em desenvolvimento...)
-Layout de site Mediacenter  para estudo.
+# Layout Mediacenter 
 
 ## Considerações
 
@@ -9,18 +7,14 @@ Layout de site Mediacenter  para estudo.
 - utilização de flexbox
 
 
-## Licença
+## Visualize no link:
 
-[MIT](https://choosealicense.com/licenses/mit/)     
-
-
-
-
+[Link](https://wbrunonogueira.github.io/Projeto-layout/)     
 
 
 
 # PROJECT  - LAYOUT
-## (UNDER DEVELOPMENT...)
+
 Layout of a Media center website, for study.
 
 ## considerations
@@ -29,8 +23,9 @@ Layout of a Media center website, for study.
 - added semantics in HTML
 - use of flexbox in the project
 
-## License
 
+
+## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
